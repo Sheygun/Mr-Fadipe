@@ -127,7 +127,9 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     margin: 1em;
 	background:#fff;
 }
-
+.banner-text{
+	height: 650px;
+}
 .banner-text h3 {
     color: #fff;
     font-size: 2em;
@@ -136,7 +138,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     margin: 1em 0;
 }
 .banner-text p {
-    font-size: 1.1em;
+	font-size: 1.1em;
     color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
