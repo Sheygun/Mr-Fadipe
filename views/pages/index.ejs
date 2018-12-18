@@ -1,66 +1,331 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <% include ../partials/header.ejs %>
+<title>Samuel fadipe</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="stylesheets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="stylesheets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="stylesheets/css/chocolat.css" type="text/css" media="screen"><!-- chocolate css for gallery light box-->
+<!-- animation -->
+<link href="stylesheets/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<!-- //animation --> 
+<link href="stylesheets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="stylesheets/js/jquery-1.11.1.min.js"></script>
+<script src="stylesheets/js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<link href="//fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+
+
+
+<!-- <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="stylesheets/css/mdb.min.css" rel="stylesheet">
 </head>
 
-<body>
 
-  <% include ../partials/nav.ejs %>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with SHEYGUN</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started with Node</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"> 
+		<!-- header -->
+		<div class="header-w3layouts"> 
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Vitae</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a class="navbar-brand" href="index.html">Fadipe</a></h1>
+					</div> 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right black">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+							<li><a class="page-scroll scroll active" href="#home">Home</a></li>
+							<li><a class="page-scroll scroll" href="#about">About</a></li>
+							<li><a class="page-scroll scroll" href="#edu">Education</a></li>
+							<li><a class="page-scroll scroll" href="#exp">My Skills</a></li>
+							<li><a class="page-scroll scroll" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+			</nav>  
+		</div>	
+		<!-- //header -->
+		<div class="header jarallax" id="home">
+			<div class="container">
+				<div class="banner-text text-center">
+					<h2>FADIPE SAMUEL R.</h2>
+					<h3>ICT director in LASU</h3>
+					<p class="">I'm a Network Manager with years of Experience at different Tertiary Institute of which i am Presenting in 
+                        Lagos State University
+                     </p>
+					
+				</div>	
+				
+			</div>
+			
+		</div>
+		
+	<div class="about" id="about">
+		<div class="container">	
+                <h3 class="w3l-heading" style="font-size:34px;">About me</h3>
+                
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="stylesheets/images/3.jpg" class="img-fluid" style="height: 400px;" alt="about-img"/>
+                    </div>
+                    <div class="col-md-7">
+                           <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                           <p>
+                                I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+                                I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
+                           </p>
+                        </div>
+                </div>
+			
+			<div class="clearfix"></div>
+		</div>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
+
+
+	<div id="edu" class="agile-edu">
+		<div class="container">	
+				<h3 class="w3l-heading">Education</h3>
+
+
+                <div class="row">
+                        
+                        <div class="col-md-7">
+                               <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                               <p>
+                                    I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+                                    I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+    
+                               </p>
+                            </div>
+                            
+                            <div class="col-md-5">
+                            <img src="stylesheets/images/3.jpg" class="img-fluid" style="height: 400px;" alt="about-img"/>
+                        </div>
+                    </div>
+		
+			
+			<span class="edu-circle"></span>
+			</div>
+		</div>
     </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
+    
+
+
+
+<div class="agile-border">
+	<span></span>
+</div>
+	<div id="exp" class="agile-edu exp">
+		<div class="container">	
+                <h3 class="w3l-heading">My Skills</h3>
+                
+        <div class="row">      
+                    <div class="col-md-4">
+                        <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                        <p>
+                            I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+            
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                            <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                            <p>
+                                I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+                              
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                                <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                                <p>
+                                    I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+                                
+                                </p>
+                            </div>       
+            </div>
+
+            <div class="row">      
+                    <div class="col-md-4">
+                        <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                        <p>
+                            I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+            
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                            <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                            <p>
+                                I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+                              
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                                <h1 class="text-center wow fadeInLeft h1">My Information</h1>
+                                <p>
+                                    I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.
+                                
+                                </p>
+                            </div>       
+            </div>
+    
+    
+	</div>
 </div>
 
+
+
+
+<div id="contact" class="w3_agileits-contact">
+		<div class="container">	
+				<h3 class="w3l-heading">contact</h3>
+				<div class="w3_agile-contact  jarallax text-center">
+					<form action="#" method="get">
+						<input type="text" placeholder="Name" name="name" class="name" required>
+						<input type="text" placeholder="Phone Number" name="phone" class="name" required>
+						<input type="email" placeholder="Email" name="email" class="email" required>
+						<textarea name="message" placeholder="Message"></textarea>
+						<input type="submit" value="send">
+					</form>
+				
+					
+				</div>
+		</div>	
+</div>	
+<div class="black text-center">
+        <ul class="social-icons-w3_agile" style="font-size: 30px;">
+                <li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
+                <li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
+                <li><a href="#" class="fa fa-instagram icon icon-border "> </a></li>
+                <li><a href="#" class="fa fa-youtube icon icon-border"> </a></li>
+                <li><a href="#" class="fa fa-snapchat icon icon-border"> </a></li>
+                <li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
+            </ul>        
+   
+    </div>
+
+    <div class="black text-center">
+        <div class="row container">
+            <div class="col-md-4 container">
+                	
+					<p>Other informations and details</p>
+                    <h5>yahoomail.com</h5>
+                    <h5>gmail.com</h5>
+                    <h5>Other website added</h5>
+            </div>
+            <div class="col-md-4 container">
+                
+					<p>Other informations and details</p>
+					<p>Other informations and details</p>
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+					
+            </div>
+            <div class="col-md-4 container">
+                
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+                    <p>Other informations and details</p>
+					
+            </div>
+               
+        </div>
+    </div>
+
+<div class="agileits_w3layouts-footer text-center">
+	<div class="container">
+		<p>Copyright &copy; 2018, Samdos</p>
+	</div>
+</div>	
+
+
+<script src="stylesheets/js/jquery.chocolat.js"></script>
+<script src="stylesheets/js/jquery.filterizr.js"></script>
+<script src="stylesheets/js/controls.js"></script>	
+<script type="text/javascript" src="stylesheets/js/easing.js"></script>
+<script src="stylesheets/js/jarallax.js"></script>
+<script src="stylesheets/js/SmoothScroll.min.js"></script>
+<script src="stylesheets/js/jquery-1.11.1.min.js"></script>
+<script src="stylesheets/bootstrap/js/bootstrap.min.js"></script>
+<script src="stylesheets/js/jquery.backstretch.min.js"></script>
+<script src="stylesheets/js/wow.min.js"></script>
+<script src="stylesheets/js/retina-1.1.0.min.js"></script>
+<script src="stylesheets/js/scripts.js"></script>
+
+
+
+
+<!-- 
+<script type="text/javascript" src="stylesheets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="stylesheets/js/styleswitch.js"></script> 
+<script src="stylesheets/js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="stylesheets/js/jquery.smartmenus.min.js"></script>
+<script type="text/javascript" src="stylesheets/js/jquery.smartmenus.bootstrap.min.js"></script>
+<script type="text/javascript" src="stylesheets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="stylesheets/js/jflickrfeed.js"></script>
+<script type="text/javascript" src="stylesheets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="stylesheets/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="stylesheets/js/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="stylesheets/js/swipe.js"></script>
+<script type="text/javascript" src="stylesheets/js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="stylesheets/js/jquery.matchHeight-min.js"></script> -->
+
+
+<script type="text/javascript">
+	$('.jarallax').jarallax({
+		speed: 0.5,
+		imgWidth: 1366,
+		imgHeight: 768
+	})
+</script>
+	<script type="text/javascript">
+        $(function() {
+            $('.filtr-item a').Chocolat();
+        });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('.filtr-container').filterizr();
+        });
+    </script>
+	
 
 </body>
 </html>
