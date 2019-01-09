@@ -76,7 +76,7 @@ p {
     background-position: 50% 50%;
 }
 h1 a.navbar-brand {
-    font-size: 1em;
+    font-size:20px;
     color: #fff !important;
     padding: 0;
     height: inherit;
@@ -352,6 +352,11 @@ figure.w3ls-gallery:hover figcaption.w3layouts-caption {
     -ms-transform: rotate(0);
     transform: rotate(0);
     top: 0;
+}
+
+.my-img{
+	height: 300px;
+
 }
 
 figcaption.w3layouts-caption {
